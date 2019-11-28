@@ -6,6 +6,10 @@ ChiefEmployee::ChiefEmployee()
 {
 }
 
+ChiefEmployee::ChiefEmployee(std::string name) : IEmployee(name)
+{
+}
+
 
 ChiefEmployee::~ChiefEmployee()
 {
