@@ -150,8 +150,10 @@
     <ClInclude Include="EngineerEmployee.h" />
     <ClInclude Include="IDelivery.h" />
     <ClInclude Include="IDepartment.h" />
+    <ClInclude Include="IdGenerator.h" />
     <ClInclude Include="IEmployee.h" />
     <ClInclude Include="ITDepartment.h" />
+    <ClInclude Include="IUnitDelivery.h" />
     <ClInclude Include="JuniorEmployee.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SeniorEmployee.h" />
@@ -165,8 +167,10 @@
     <ClCompile Include="EngineerEmployee.cpp" />
     <ClCompile Include="IDelivery.cpp" />
     <ClCompile Include="IDepartment.cpp" />
+    <ClCompile Include="IdGenerator.cpp" />
     <ClCompile Include="IEmployee.cpp" />
     <ClCompile Include="ITDepartment.cpp" />
+    <ClCompile Include="IUnitDelivery.cpp" />
     <ClCompile Include="JuniorEmployee.cpp" />
     <ClCompile Include="SeniorEmployee.cpp" />
     <ClCompile Include="SingletonClass.cpp" />

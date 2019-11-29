@@ -3,10 +3,13 @@
 
 IDelivery::IDelivery()
 {
+	id = -1;
+	this->status = StatusType::ON_WAREHOUSE;
 }
 
-IDelivery::IDelivery(std::string name, DeliveryType type) : name(name), type(type)
+IDelivery::IDelivery(int id, std::string name, std::string address) : name(name) , address(address), id(id)
 {
+	this->status = StatusType::ON_WAREHOUSE;
 }
 
 
@@ -14,7 +17,37 @@ IDelivery::~IDelivery()
 {
 }
 
-std::string IDelivery::getName()
+const std::string IDelivery::getName() const
 {
 	return name;
+}
+
+const std::string IDelivery::getAddress() const
+{
+	return this->address;
+}
+
+int IDelivery::getId() const
+{
+	return id;
+}
+
+// const DeliveryType IDelivery::getDeliveryType() const
+// {
+//	return type;
+// }
+
+const StatusType IDelivery::getStatus() const
+{
+	return status;
+}
+
+// void IDelivery::setDeliveryType(DeliveryType newType)
+// {
+//	type = newType;
+// }
+
+void IDelivery::setStatus(StatusType newStatus)
+{
+	status = newStatus;
 }
