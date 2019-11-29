@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Заголовочные файлы\Singletone">
+      <UniqueIdentifier>{1c162264-a134-4bb2-8f9d-242150261497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\FactoryMethod">
+      <UniqueIdentifier>{1d055da6-9688-4cb6-bdb9-b8af4c70bd78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\FactoryMethod">
+      <UniqueIdentifier>{2031f694-ddcb-4c8f-ac65-7d2e4faccc5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Singletone">
+      <UniqueIdentifier>{a8bcd4d8-caf6-4bac-bcce-390d2764ff16}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,44 +36,38 @@
     <ClInclude Include="targetver.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="SingletonClass.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="IDepartment.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="IEmployee.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="ChiefEmployee.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="SeniorEmployee.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="JuniorEmployee.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="EngineerEmployee.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="ITDepartment.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="EngineerDepartment.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="IDelivery.h">
-      <Filter>Заголовочные файлы</Filter>
+    <ClInclude Include="SingletonClass.h">
+      <Filter>Заголовочные файлы\Singletone</Filter>
     </ClInclude>
-    <ClInclude Include="IUnitDelivery.h">
-      <Filter>Заголовочные файлы</Filter>
+    <ClInclude Include="ExperessDeliveryUnit.h">
+      <Filter>Заголовочные файлы\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressDelivery.h">
+      <Filter>Заголовочные файлы\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="IDelivery.h">
+      <Filter>Заголовочные файлы\FactoryMethod</Filter>
     </ClInclude>
     <ClInclude Include="IdGenerator.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="IUnitDelivery.h">
+      <Filter>Заголовочные файлы\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="PickupDelivery.h">
+      <Filter>Заголовочные файлы\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="PickupDeliveryUnit.h">
+      <Filter>Заголовочные файлы\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="PostDeliverUnit.h">
+      <Filter>Заголовочные файлы\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="PostDelivery.h">
+      <Filter>Заголовочные файлы\FactoryMethod</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -71,41 +77,35 @@
     <ClCompile Include="test_patterns_MVS.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
-    <ClCompile Include="SingletonClass.cpp">
-      <Filter>Файлы исходного кода</Filter>
+    <ClCompile Include="ExperessDeliveryUnit.cpp">
+      <Filter>Файлы исходного кода\FactoryMethod</Filter>
     </ClCompile>
-    <ClCompile Include="IDepartment.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="IEmployee.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="ChiefEmployee.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="SeniorEmployee.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="JuniorEmployee.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="EngineerEmployee.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="ITDepartment.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="EngineerDepartment.cpp">
-      <Filter>Файлы исходного кода</Filter>
+    <ClCompile Include="ExpressDelivery.cpp">
+      <Filter>Файлы исходного кода\FactoryMethod</Filter>
     </ClCompile>
     <ClCompile Include="IDelivery.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
-    <ClCompile Include="IUnitDelivery.cpp">
-      <Filter>Файлы исходного кода</Filter>
+      <Filter>Файлы исходного кода\FactoryMethod</Filter>
     </ClCompile>
     <ClCompile Include="IdGenerator.cpp">
-      <Filter>Файлы исходного кода</Filter>
+      <Filter>Файлы исходного кода\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="IUnitDelivery.cpp">
+      <Filter>Файлы исходного кода\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="PickupDelivery.cpp">
+      <Filter>Файлы исходного кода\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="PickupDeliveryUnit.cpp">
+      <Filter>Файлы исходного кода\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="PostDeliverUnit.cpp">
+      <Filter>Файлы исходного кода\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="PostDelivery.cpp">
+      <Filter>Файлы исходного кода\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="SingletonClass.cpp">
+      <Filter>Файлы исходного кода\Singletone</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

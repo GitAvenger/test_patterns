@@ -145,34 +145,30 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ChiefEmployee.h" />
-    <ClInclude Include="EngineerDepartment.h" />
-    <ClInclude Include="EngineerEmployee.h" />
+    <ClInclude Include="ExperessDeliveryUnit.h" />
+    <ClInclude Include="ExpressDelivery.h" />
     <ClInclude Include="IDelivery.h" />
-    <ClInclude Include="IDepartment.h" />
     <ClInclude Include="IdGenerator.h" />
-    <ClInclude Include="IEmployee.h" />
-    <ClInclude Include="ITDepartment.h" />
     <ClInclude Include="IUnitDelivery.h" />
-    <ClInclude Include="JuniorEmployee.h" />
+    <ClInclude Include="PickupDelivery.h" />
+    <ClInclude Include="PickupDeliveryUnit.h" />
+    <ClInclude Include="PostDeliverUnit.h" />
+    <ClInclude Include="PostDelivery.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="SeniorEmployee.h" />
     <ClInclude Include="SingletonClass.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ChiefEmployee.cpp" />
-    <ClCompile Include="EngineerDepartment.cpp" />
-    <ClCompile Include="EngineerEmployee.cpp" />
+    <ClCompile Include="ExperessDeliveryUnit.cpp" />
+    <ClCompile Include="ExpressDelivery.cpp" />
     <ClCompile Include="IDelivery.cpp" />
-    <ClCompile Include="IDepartment.cpp" />
     <ClCompile Include="IdGenerator.cpp" />
-    <ClCompile Include="IEmployee.cpp" />
-    <ClCompile Include="ITDepartment.cpp" />
     <ClCompile Include="IUnitDelivery.cpp" />
-    <ClCompile Include="JuniorEmployee.cpp" />
-    <ClCompile Include="SeniorEmployee.cpp" />
+    <ClCompile Include="PickupDelivery.cpp" />
+    <ClCompile Include="PickupDeliveryUnit.cpp" />
+    <ClCompile Include="PostDeliverUnit.cpp" />
+    <ClCompile Include="PostDelivery.cpp" />
     <ClCompile Include="SingletonClass.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
