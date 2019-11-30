@@ -145,11 +145,18 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DialogWindow.h" />
     <ClInclude Include="ExperessDeliveryUnit.h" />
     <ClInclude Include="ExpressDelivery.h" />
+    <ClInclude Include="IButton.h" />
+    <ClInclude Include="IComponentFactory.h" />
     <ClInclude Include="IDelivery.h" />
     <ClInclude Include="IdGenerator.h" />
+    <ClInclude Include="IRadioButton.h" />
     <ClInclude Include="IUnitDelivery.h" />
+    <ClInclude Include="LinuxButton.h" />
+    <ClInclude Include="LinuxComponentFactory.h" />
+    <ClInclude Include="LinuxRadioButton.h" />
     <ClInclude Include="PickupDelivery.h" />
     <ClInclude Include="PickupDeliveryUnit.h" />
     <ClInclude Include="PostDeliverUnit.h" />
@@ -158,13 +165,23 @@
     <ClInclude Include="SingletonClass.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="WinButton.h" />
+    <ClInclude Include="WinComponentFactory.h" />
+    <ClInclude Include="WinRadioButton.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DialogWindow.cpp" />
     <ClCompile Include="ExperessDeliveryUnit.cpp" />
     <ClCompile Include="ExpressDelivery.cpp" />
+    <ClCompile Include="IButton.cpp" />
+    <ClCompile Include="IComponentFactory.cpp" />
     <ClCompile Include="IDelivery.cpp" />
     <ClCompile Include="IdGenerator.cpp" />
+    <ClCompile Include="IRadioButton.cpp" />
     <ClCompile Include="IUnitDelivery.cpp" />
+    <ClCompile Include="LinuxButton.cpp" />
+    <ClCompile Include="LinuxComponentFactory.cpp" />
+    <ClCompile Include="LinuxRadioButton.cpp" />
     <ClCompile Include="PickupDelivery.cpp" />
     <ClCompile Include="PickupDeliveryUnit.cpp" />
     <ClCompile Include="PostDeliverUnit.cpp" />
@@ -177,6 +194,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="test_patterns_MVS.cpp" />
+    <ClCompile Include="WinButton.cpp" />
+    <ClCompile Include="WinComponentFactory.cpp" />
+    <ClCompile Include="WinRadioButton.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="test_patterns_MVS.rc" />

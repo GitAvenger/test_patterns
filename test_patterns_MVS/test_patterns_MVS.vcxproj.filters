@@ -25,6 +25,12 @@
     <Filter Include="Файлы исходного кода\Singletone">
       <UniqueIdentifier>{a8bcd4d8-caf6-4bac-bcce-390d2764ff16}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Заголовочные файлы\AbstractFactory">
+      <UniqueIdentifier>{0886e1a4-9e3a-42a5-8bcd-e2060fc45526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\AbstractFactory">
+      <UniqueIdentifier>{af9aa9a7-6e24-4865-a482-2a422a0242be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -69,6 +75,36 @@
     <ClInclude Include="PostDelivery.h">
       <Filter>Заголовочные файлы\FactoryMethod</Filter>
     </ClInclude>
+    <ClInclude Include="DialogWindow.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="IButton.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="IComponentFactory.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="IRadioButton.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="LinuxButton.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="LinuxComponentFactory.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="LinuxRadioButton.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="WinButton.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="WinComponentFactory.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="WinRadioButton.h">
+      <Filter>Заголовочные файлы\AbstractFactory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -106,6 +142,36 @@
     </ClCompile>
     <ClCompile Include="SingletonClass.cpp">
       <Filter>Файлы исходного кода\Singletone</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogWindow.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="IButton.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="IComponentFactory.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="IRadioButton.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="LinuxButton.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="LinuxComponentFactory.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="LinuxRadioButton.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="WinButton.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="WinComponentFactory.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="WinRadioButton.cpp">
+      <Filter>Файлы исходного кода\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
