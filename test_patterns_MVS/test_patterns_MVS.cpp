@@ -22,11 +22,21 @@
 #include "WinComponentFactory.h"
 #include "LinuxComponentFactory.h"
 
+#include "INewManInfo.h"
+#include "ManInfo.h"
+#include "ManInfoAdapter.h"
+#include "Man.h"
+
 // инициализация диалога для примера абстрактной фабрики
 void initializeDialog(DialogWindow& dlg, IComponentFactory* compFactory)
 {
 	dlg.btn = compFactory->createButton();
 	dlg.radioBtn = compFactory->createRadioButton();
+}
+
+void manInfoPrint(INewManInfo& manInfo)
+{
+	std::cout << "Name: " << manInfo.getName() << std::endl << "Age: " << manInfo.getAge() << std::endl;
 }
 
 // подключить бы остальные файлы
@@ -75,6 +85,19 @@ int main()
 
 	delete compFactory1;
 	delete compFactory2;
+
+	// проверка работы адаптера
+
+	char name[] = "Ivan Ivanovich";
+	ManInfo manInfo1(name, 1995);
+	manInfo1.print();
+
+	ManInfoAdapter infoAdapter(&manInfo1);
+
+	Man man("Petr Petrovich", 17);
+
+	manInfoPrint(infoAdapter);
+	manInfoPrint(man);
 
 	system("pause");
     return 0;

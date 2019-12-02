@@ -105,6 +105,18 @@
     <ClInclude Include="WinRadioButton.h">
       <Filter>Заголовочные файлы\AbstractFactory</Filter>
     </ClInclude>
+    <ClInclude Include="ManInfo.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="INewManInfo.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Man.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ManInfoAdapter.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -172,6 +184,18 @@
     </ClCompile>
     <ClCompile Include="WinRadioButton.cpp">
       <Filter>Файлы исходного кода\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="ManInfo.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="INewManInfo.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Man.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ManInfoAdapter.cpp">
+      <Filter>Файлы исходного кода</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
