@@ -27,6 +27,12 @@
 #include "ManInfoAdapter.h"
 #include "Man.h"
 
+#include "ITextGenerator.h"
+#include "ITextGeneratorDecorator.h"
+#include "TemplateTextGenerator.h"
+#include "TemplateInfoCountSymbolTextGenerator.h"
+#include "TemplateInfoCountRowTextGenerator.h"
+
 // инициализация диалога для примера абстрактной фабрики
 void initializeDialog(DialogWindow& dlg, IComponentFactory* compFactory)
 {
@@ -98,6 +104,19 @@ int main()
 
 	manInfoPrint(infoAdapter);
 	manInfoPrint(man);
+
+	// проверка работы декоратора
+
+	ITextGenerator* textGen = new TemplateTextGenerator("Vi \n doljny pridti \n v 12.00");
+	std::cout << textGen->getText() << std::endl;
+
+	ITextGeneratorDecorator* textGenDecor1 = new TemplateInfoCountSymbolTextGenerator(textGen);
+	std::cout << textGenDecor1->getText() << std::endl;
+
+	ITextGeneratorDecorator* textGenDecor2 = new TemplateInfoCountRowTextGenerator(textGenDecor1);
+	std::cout << textGenDecor2->getText() << std::endl;
+
+	delete textGen, textGenDecor1, textGenDecor2;
 
 	system("pause");
     return 0;

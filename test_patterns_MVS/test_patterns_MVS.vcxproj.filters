@@ -31,6 +31,18 @@
     <Filter Include="Файлы исходного кода\AbstractFactory">
       <UniqueIdentifier>{af9aa9a7-6e24-4865-a482-2a422a0242be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Заголовочные файлы\Adapter">
+      <UniqueIdentifier>{a31ab80d-688d-48b6-8e39-4c0e7c7c3ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Adapter">
+      <UniqueIdentifier>{6315e8fd-d329-4dfe-b920-e66e715a4314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Decorator">
+      <UniqueIdentifier>{d478fa7b-b26f-45d4-897e-48edba2f4448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Decorator">
+      <UniqueIdentifier>{0b7c6223-3eb5-409a-a89b-dfc618a35e2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -105,17 +117,32 @@
     <ClInclude Include="WinRadioButton.h">
       <Filter>Заголовочные файлы\AbstractFactory</Filter>
     </ClInclude>
-    <ClInclude Include="ManInfo.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
     <ClInclude Include="INewManInfo.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Adapter</Filter>
     </ClInclude>
     <ClInclude Include="Man.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="ManInfo.h">
+      <Filter>Заголовочные файлы\Adapter</Filter>
     </ClInclude>
     <ClInclude Include="ManInfoAdapter.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateInfoCountRowTextGenerator.h">
+      <Filter>Заголовочные файлы\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateInfoCountSymbolTextGenerator.h">
+      <Filter>Заголовочные файлы\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateTextGenerator.h">
+      <Filter>Заголовочные файлы\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextGeneratorDecorator.h">
+      <Filter>Заголовочные файлы\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextGenerator.h">
+      <Filter>Заголовочные файлы\Decorator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -185,17 +212,32 @@
     <ClCompile Include="WinRadioButton.cpp">
       <Filter>Файлы исходного кода\AbstractFactory</Filter>
     </ClCompile>
-    <ClCompile Include="ManInfo.cpp">
-      <Filter>Файлы исходного кода</Filter>
+    <ClCompile Include="Man.cpp">
+      <Filter>Файлы исходного кода\Adapter</Filter>
     </ClCompile>
     <ClCompile Include="INewManInfo.cpp">
-      <Filter>Файлы исходного кода</Filter>
+      <Filter>Файлы исходного кода\Adapter</Filter>
     </ClCompile>
-    <ClCompile Include="Man.cpp">
-      <Filter>Файлы исходного кода</Filter>
+    <ClCompile Include="ManInfo.cpp">
+      <Filter>Файлы исходного кода\Adapter</Filter>
     </ClCompile>
     <ClCompile Include="ManInfoAdapter.cpp">
-      <Filter>Файлы исходного кода</Filter>
+      <Filter>Файлы исходного кода\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="ITextGenerator.cpp">
+      <Filter>Файлы исходного кода\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="ITextGeneratorDecorator.cpp">
+      <Filter>Файлы исходного кода\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateInfoCountRowTextGenerator.cpp">
+      <Filter>Файлы исходного кода\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateInfoCountSymbolTextGenerator.cpp">
+      <Filter>Файлы исходного кода\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateTextGenerator.cpp">
+      <Filter>Файлы исходного кода\Decorator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

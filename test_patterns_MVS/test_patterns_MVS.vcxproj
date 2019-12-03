@@ -154,6 +154,8 @@
     <ClInclude Include="IdGenerator.h" />
     <ClInclude Include="INewManInfo.h" />
     <ClInclude Include="IRadioButton.h" />
+    <ClInclude Include="ITextGenerator.h" />
+    <ClInclude Include="ITextGeneratorDecorator.h" />
     <ClInclude Include="IUnitDelivery.h" />
     <ClInclude Include="LinuxButton.h" />
     <ClInclude Include="LinuxComponentFactory.h" />
@@ -169,6 +171,9 @@
     <ClInclude Include="SingletonClass.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TemplateInfoCountRowTextGenerator.h" />
+    <ClInclude Include="TemplateInfoCountSymbolTextGenerator.h" />
+    <ClInclude Include="TemplateTextGenerator.h" />
     <ClInclude Include="WinButton.h" />
     <ClInclude Include="WinComponentFactory.h" />
     <ClInclude Include="WinRadioButton.h" />
@@ -183,6 +188,8 @@
     <ClCompile Include="IdGenerator.cpp" />
     <ClCompile Include="INewManInfo.cpp" />
     <ClCompile Include="IRadioButton.cpp" />
+    <ClCompile Include="ITextGenerator.cpp" />
+    <ClCompile Include="ITextGeneratorDecorator.cpp" />
     <ClCompile Include="IUnitDelivery.cpp" />
     <ClCompile Include="LinuxButton.cpp" />
     <ClCompile Include="LinuxComponentFactory.cpp" />
@@ -201,6 +208,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TemplateInfoCountRowTextGenerator.cpp" />
+    <ClCompile Include="TemplateInfoCountSymbolTextGenerator.cpp" />
+    <ClCompile Include="TemplateTextGenerator.cpp" />
     <ClCompile Include="test_patterns_MVS.cpp" />
     <ClCompile Include="WinButton.cpp" />
     <ClCompile Include="WinComponentFactory.cpp" />
