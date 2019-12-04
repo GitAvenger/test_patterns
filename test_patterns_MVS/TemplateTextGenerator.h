@@ -9,6 +9,6 @@ public:
 	TemplateTextGenerator(std::string text);
 	// Унаследовано через ITextGenerator
 	virtual std::string getText() override;
-	~TemplateTextGenerator();
+	virtual ~TemplateTextGenerator();
 };
 

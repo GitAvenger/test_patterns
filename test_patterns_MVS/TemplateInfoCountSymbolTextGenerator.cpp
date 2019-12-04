@@ -23,4 +23,7 @@ void TemplateInfoCountSymbolTextGenerator::printInfo()
 
 TemplateInfoCountSymbolTextGenerator::~TemplateInfoCountSymbolTextGenerator()
 {
+	// delete в данном случае не нужен, так как память по этому
+	// адресу освобождается в main
+	// delete textGen;
 }

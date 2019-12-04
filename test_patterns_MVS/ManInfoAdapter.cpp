@@ -25,4 +25,5 @@ ManInfoAdapter::ManInfoAdapter(const ManInfo* const manInfo)
 
 ManInfoAdapter::~ManInfoAdapter()
 {
+	delete man_info;
 }

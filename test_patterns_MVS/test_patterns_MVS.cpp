@@ -1,6 +1,10 @@
 // test_patterns_MVS.cpp: определ€ет точку входа дл€ консольного приложени€.
 //
 
+#include <crtdbg.h>
+
+
+
 #include "stdafx.h"
 #include <cstdlib>
 #include <iostream>
@@ -8,6 +12,7 @@
 
 #include "SingletonClass.h"
 
+#include "IdGenerator.h"
 #include "IDelivery.h"
 #include "IUnitDelivery.h"
 #include "ExpressDelivery.h"
@@ -33,6 +38,10 @@
 #include "TemplateInfoCountSymbolTextGenerator.h"
 #include "TemplateInfoCountRowTextGenerator.h"
 
+#include "IUnit.h"
+#include "PersonalUnit.h"
+#include "DepartmentUnit.h"
+
 // инициализаци€ диалога дл€ примера абстрактной фабрики
 void initializeDialog(DialogWindow& dlg, IComponentFactory* compFactory)
 {
@@ -45,9 +54,7 @@ void manInfoPrint(INewManInfo& manInfo)
 	std::cout << "Name: " << manInfo.getName() << std::endl << "Age: " << manInfo.getAge() << std::endl;
 }
 
-// подключить бы остальные файлы
-
-int main()
+void executeExaples()
 {
 	// проверка работы синглтона
 
@@ -56,6 +63,7 @@ int main()
 	std::cout << "singleton1 = " << singleton1 << std::endl;
 	std::cout << "singleton2 = " << singleton2 << std::endl;
 
+	// очистка пам€ти
 	delete singleton1;
 
 	// проверка работы фабричного метода
@@ -73,9 +81,13 @@ int main()
 	for (int i = 0; i < deliveryList.size(); i++)
 		std::cout << "id = " << deliveryList[i]->getId() << " »м€ = " << deliveryList[i]->getName() << std::endl;
 
+	// очистка пам€ти
+	for (int i = 0; i < deliveryList.size(); i++)
+		delete deliveryList[i];
 	delete postDelivery;
 	delete pickupDelivery;
 	delete expressDelivery;
+	delete IdGenerator::getInstance();
 
 	// проверка работы абстрактной фабрики
 
@@ -89,6 +101,7 @@ int main()
 
 	dlg.componentPaint();
 
+	// очистка пам€ти
 	delete compFactory1;
 	delete compFactory2;
 
@@ -116,9 +129,66 @@ int main()
 	ITextGeneratorDecorator* textGenDecor2 = new TemplateInfoCountRowTextGenerator(textGenDecor1);
 	std::cout << textGenDecor2->getText() << std::endl;
 
-	delete textGen, textGenDecor1, textGenDecor2;
+	// очистка пам€ти
+	delete textGenDecor2;
+	textGenDecor2 = nullptr;
+	delete textGenDecor1;
+	textGenDecor1 = nullptr;
+	delete textGen;
+	textGen = nullptr;
 
-	system("pause");
+	// тут нужно бы построить древовидную структуру дл€ примера, реализующего паттерн компоновщик
+
+	IUnit* personalUnit1 = new PersonalUnit(true, "sergeant Petrov");
+	IUnit* personalUnit2 = new PersonalUnit(true, "ordinary Ivanov");
+	IUnit* personalUnit3 = new PersonalUnit(true, "lieutenant Zloy");
+	IUnit* personalUnit4 = new PersonalUnit(false, "ordinary Smirnov");
+	IUnit* personalUnit5 = new PersonalUnit(true, "ordinary Pogudin");
+
+	IUnit* personalUnit6 = new PersonalUnit(false, "sergeant Putin");
+	IUnit* personalUnit7 = new PersonalUnit(false, "ordinary Sidorov");
+	IUnit* personalUnit8 = new PersonalUnit(true, "lieutenant Glupyi");
+	IUnit* personalUnit9 = new PersonalUnit(true, "ordinary Medvedev");
+	IUnit* personalUnit10 = new PersonalUnit(false, "ordinary Borisov");
+
+	IUnit* personalUnit11 = new PersonalUnit(true, "captain Maiskyi");
+	IUnit* personalUnit12 = new PersonalUnit(false, "captain Bredov");
+	IUnit* personalUnit13 = new PersonalUnit(true, "major Golovanov");
+
+	DepartmentUnit* platoonUnit1 = new DepartmentUnit();
+	DepartmentUnit* platoonUnit2 = new DepartmentUnit();
+
+	DepartmentUnit* companyUnit = new DepartmentUnit();
+
+	platoonUnit1->addUnit(personalUnit1);
+	platoonUnit1->addUnit(personalUnit2);
+	platoonUnit1->addUnit(personalUnit3);
+	platoonUnit1->addUnit(personalUnit4);
+	platoonUnit1->addUnit(personalUnit5);
+
+	platoonUnit2->addUnit(personalUnit6);
+	platoonUnit2->addUnit(personalUnit7);
+	platoonUnit2->addUnit(personalUnit8);
+	platoonUnit2->addUnit(personalUnit9);
+	platoonUnit2->addUnit(personalUnit10);
+
+	companyUnit->addUnit(platoonUnit1);
+	companyUnit->addUnit(platoonUnit2);
+	companyUnit->addUnit(personalUnit13);
+
+	std::cout << "companyUnit->report() = " << companyUnit->report() << std::endl;
+}
+
+int main()
+{
+	_CrtMemState _ms;
+	_CrtMemCheckpoint(&_ms);
+
+	executeExaples();
+
+	 system("pause");
+	
+	 _CrtMemDumpAllObjectsSince(&_ms);
     return 0;
 }
 

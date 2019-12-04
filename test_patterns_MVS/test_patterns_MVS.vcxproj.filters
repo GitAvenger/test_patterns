@@ -144,6 +144,15 @@
     <ClInclude Include="ITextGenerator.h">
       <Filter>Заголовочные файлы\Decorator</Filter>
     </ClInclude>
+    <ClInclude Include="IUnit.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonalUnit.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DepartmentUnit.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -238,6 +247,15 @@
     </ClCompile>
     <ClCompile Include="TemplateTextGenerator.cpp">
       <Filter>Файлы исходного кода\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="IUnit.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonalUnit.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DepartmentUnit.cpp">
+      <Filter>Файлы исходного кода</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

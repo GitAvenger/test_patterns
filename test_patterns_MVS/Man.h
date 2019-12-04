@@ -8,7 +8,7 @@ class Man : public INewManInfo
 public:
 	Man();
 	Man(std::string name, int age);
-	~Man();
+	virtual ~Man();
 private:
 	std::string name;
 	int age;

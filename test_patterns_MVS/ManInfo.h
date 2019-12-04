@@ -7,7 +7,7 @@ class ManInfo
 public:
 	ManInfo();
 	ManInfo(const char* const name, int year);
-	~ManInfo();
+	virtual ~ManInfo();
 
 	const char* const getName() const;
 	int getYear() const;

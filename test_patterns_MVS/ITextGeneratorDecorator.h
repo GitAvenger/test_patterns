@@ -7,5 +7,6 @@ class ITextGeneratorDecorator : public ITextGenerator
 {
 public:
 	virtual void printInfo() = 0;
+	virtual ~ITextGeneratorDecorator();
 };
 

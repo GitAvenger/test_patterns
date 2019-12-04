@@ -71,9 +71,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Visual Leak Detector\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Visual Leak Detector\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -145,6 +147,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DepartmentUnit.h" />
     <ClInclude Include="DialogWindow.h" />
     <ClInclude Include="ExperessDeliveryUnit.h" />
     <ClInclude Include="ExpressDelivery.h" />
@@ -156,6 +159,7 @@
     <ClInclude Include="IRadioButton.h" />
     <ClInclude Include="ITextGenerator.h" />
     <ClInclude Include="ITextGeneratorDecorator.h" />
+    <ClInclude Include="IUnit.h" />
     <ClInclude Include="IUnitDelivery.h" />
     <ClInclude Include="LinuxButton.h" />
     <ClInclude Include="LinuxComponentFactory.h" />
@@ -163,6 +167,7 @@
     <ClInclude Include="Man.h" />
     <ClInclude Include="ManInfo.h" />
     <ClInclude Include="ManInfoAdapter.h" />
+    <ClInclude Include="PersonalUnit.h" />
     <ClInclude Include="PickupDelivery.h" />
     <ClInclude Include="PickupDeliveryUnit.h" />
     <ClInclude Include="PostDeliverUnit.h" />
@@ -179,6 +184,7 @@
     <ClInclude Include="WinRadioButton.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DepartmentUnit.cpp" />
     <ClCompile Include="DialogWindow.cpp" />
     <ClCompile Include="ExperessDeliveryUnit.cpp" />
     <ClCompile Include="ExpressDelivery.cpp" />
@@ -190,6 +196,7 @@
     <ClCompile Include="IRadioButton.cpp" />
     <ClCompile Include="ITextGenerator.cpp" />
     <ClCompile Include="ITextGeneratorDecorator.cpp" />
+    <ClCompile Include="IUnit.cpp" />
     <ClCompile Include="IUnitDelivery.cpp" />
     <ClCompile Include="LinuxButton.cpp" />
     <ClCompile Include="LinuxComponentFactory.cpp" />
@@ -197,6 +204,7 @@
     <ClCompile Include="Man.cpp" />
     <ClCompile Include="ManInfo.cpp" />
     <ClCompile Include="ManInfoAdapter.cpp" />
+    <ClCompile Include="PersonalUnit.cpp" />
     <ClCompile Include="PickupDelivery.cpp" />
     <ClCompile Include="PickupDeliveryUnit.cpp" />
     <ClCompile Include="PostDeliverUnit.cpp" />

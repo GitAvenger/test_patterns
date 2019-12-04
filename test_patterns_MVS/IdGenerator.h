@@ -1,5 +1,6 @@
 #pragma once
 
+
 class IdGenerator
 {
 private:
@@ -9,11 +10,11 @@ private:
 
 	int currentId;
 
-	~IdGenerator();
-
 public:
 	static IdGenerator* getInstance();
 
 	int getNewId();
+
+	~IdGenerator();
 };
 

@@ -8,7 +8,7 @@ class ManInfoAdapter : public INewManInfo
 {
 public:
 	ManInfoAdapter(const ManInfo* const manInfo);
-	~ManInfoAdapter();
+	virtual ~ManInfoAdapter();
 
 	// Унаследовано через INewManInfo
 	virtual std::string getName() const override;

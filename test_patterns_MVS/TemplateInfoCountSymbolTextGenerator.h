@@ -12,7 +12,7 @@ public:
 	// Унаследовано через ITextGeneratorDecorator
 	virtual std::string getText() override;
 	virtual void printInfo() override;
-	~TemplateInfoCountSymbolTextGenerator();
+	virtual ~TemplateInfoCountSymbolTextGenerator();
 private:
 	ITextGenerator* textGen;
 };

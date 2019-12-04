@@ -13,5 +13,5 @@ public:
 
 	virtual IRadioButton* createRadioButton() = 0;
 
-	~IComponentFactory();
+	virtual ~IComponentFactory();
 };

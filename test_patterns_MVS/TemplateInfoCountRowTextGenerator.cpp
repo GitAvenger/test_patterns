@@ -25,13 +25,9 @@ void TemplateInfoCountRowTextGenerator::printInfo()
 	{
 		pos = text.find('\n', pos);
 		if (pos != std::string::npos)
-		{
 			++count;
-		}
 		else
-		{
 			break;
-		}
 	}
 
 	std::cout << "Getting text with row count: " << count << std::endl;
@@ -39,4 +35,7 @@ void TemplateInfoCountRowTextGenerator::printInfo()
 
 TemplateInfoCountRowTextGenerator::~TemplateInfoCountRowTextGenerator()
 {
+	// delete в данном случае не нужен, так как память по этому
+	// адресу освобождается в main
+	// delete textGen;
 }

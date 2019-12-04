@@ -8,7 +8,7 @@ class PostDeliverUnit : public IUnitDelivery
 {
 public:
 	PostDeliverUnit();
-	~PostDeliverUnit();
+	virtual ~PostDeliverUnit() override;
 
 	// Унаследовано через IUnitDelivery
 	virtual IDelivery* createDelivery(std::string name, std::string address) override;

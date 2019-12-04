@@ -6,7 +6,7 @@ class LinuxComponentFactory : public IComponentFactory
 {
 public:
 	LinuxComponentFactory();
-	~LinuxComponentFactory();
+	virtual ~LinuxComponentFactory();
 
 	// Унаследовано через IComponentFactory
 	virtual IButton * createButton() override;

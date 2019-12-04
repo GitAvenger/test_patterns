@@ -6,7 +6,7 @@ class WinComponentFactory : public IComponentFactory
 {
 public:
 	WinComponentFactory();
-	~WinComponentFactory();
+	virtual ~WinComponentFactory();
 
 	// Унаследовано через IComponentFactory
 	virtual IButton* createButton() override;

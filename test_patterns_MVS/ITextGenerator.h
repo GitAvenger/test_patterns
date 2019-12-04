@@ -9,5 +9,7 @@ public:
 	virtual std::string getText() = 0;
 
 	std::string text;
+
+	virtual ~ITextGenerator();
 };
 
