@@ -10,7 +10,7 @@ public:
 	PersonalUnit(bool state, std::string name = "default_name");
 	// Унаследовано через IUnit
 	virtual int report() override;
-	~PersonalUnit();
+	virtual ~PersonalUnit();
 private:
 	std::string name;
 	bool state;

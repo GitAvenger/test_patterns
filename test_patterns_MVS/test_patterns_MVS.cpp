@@ -42,6 +42,14 @@
 #include "PersonalUnit.h"
 #include "DepartmentUnit.h"
 
+#include "ICommand.h"
+#include "CommandManager.h"
+#include "TV.h"
+#include "Console.h"
+#include "CanalCommand.h"
+#include "SoundCommand.h"
+#include "OnCommand.h"
+
 // инициализация диалога для примера абстрактной фабрики
 void initializeDialog(DialogWindow& dlg, IComponentFactory* compFactory)
 {
@@ -137,7 +145,7 @@ void executeExaples()
 	delete textGen;
 	textGen = nullptr;
 
-	// тут нужно бы построить древовидную структуру для примера, реализующего паттерн компоновщик
+	// древовидная структура для примера, реализующего паттерн компоновщик
 
 	IUnit* personalUnit1 = new PersonalUnit(true, "sergeant Petrov");
 	IUnit* personalUnit2 = new PersonalUnit(true, "ordinary Ivanov");
@@ -177,6 +185,20 @@ void executeExaples()
 	companyUnit->addUnit(personalUnit13);
 
 	std::cout << "companyUnit->report() = " << companyUnit->report() << std::endl;
+
+	// очистка памяти
+	delete personalUnit1; delete personalUnit2; delete personalUnit3; delete personalUnit4; delete personalUnit5;
+	delete personalUnit6; delete personalUnit7; delete personalUnit8; delete personalUnit9; delete personalUnit10; delete personalUnit11;
+	delete personalUnit12; delete personalUnit13;
+	delete platoonUnit1; delete platoonUnit2; delete companyUnit;
+
+	// пример, реализующий паттерн команда
+
+	TV tv;
+	Console console;
+	CommandManager cmdManager;
+
+
 }
 
 int main()
